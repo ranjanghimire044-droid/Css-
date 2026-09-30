@@ -1,0 +1,933 @@
+/* =====================================================
+   GENERAL / UNIVERSAL SELECTOR
+   ===================================================== */
+
+/* Selects every element on the webpage */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Element selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Grouping selector */
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+#main-header {
+    width: 90%;
+    margin: 30px auto;
+    padding: 2em;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #2563eb;
+    border-radius: 12px;
+}
+
+
+/* ID selector */
+#main-header h1 {
+    color: #2563eb;
+}
+
+
+/* Class selector */
+.subtitle {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+nav {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+    background-color: #1e293b;
+    border-radius: 10px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+
+/* Adjacent hover effect */
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   BUTTON
+   ===================================================== */
+
+.primary-button,
+.contact-button,
+.unit-button {
+    padding: 12px 20px;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+
+.primary-button:hover,
+.contact-button:hover,
+.unit-button:hover {
+    opacity: 0.8;
+}
+
+
+/* =====================================================
+   MAIN SECTIONS
+   ===================================================== */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+section > h2 {
+    color: #1d4ed8;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 10px;
+}
+
+
+/* =====================================================
+   TASK 1 - SELECTORS
+   ===================================================== */
+
+
+/* Class selector */
+.selector-card {
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+/* Class selector */
+.special-card {
+    background-color: #eff6ff;
+}
+
+
+/* ID selector */
+#unique-selector {
+    background-color: #fef3c7;
+    border: 2px solid #f59e0b;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+
+/* Grouping selector */
+.group-one h3,
+.group-one p {
+    color: #7c3aed;
+}
+
+
+/* =====================================================
+   DESCENDANT SELECTOR
+   ===================================================== */
+
+/* Selects all p elements inside .descendant-example */
+.descendant-example div p {
+    color: #dc2626;
+}
+
+
+/* =====================================================
+   CHILD SELECTOR >
+   ===================================================== */
+
+/* Selects only direct child p elements */
+.child-example > p {
+    background-color: #dcfce7;
+    padding: 10px;
+    color: green;
+}
+
+
+/* =====================================================
+   ADJACENT SIBLING SELECTOR +
+   ===================================================== */
+
+/* Selects the first p immediately after h3 */
+.sibling-example h3 + p {
+    background-color: #fef3c7;
+    padding: 10px;
+    color: #92400e;
+}
+
+
+/* =====================================================
+   GENERAL SIBLING SELECTOR ~
+   ===================================================== */
+
+/* Selects all p elements after h3 */
+.general-sibling h3 ~ p {
+    background-color: #ede9fe;
+    padding: 10px;
+    color: #6d28d9;
+}
+
+
+/* =====================================================
+   ATTRIBUTE SELECTOR
+   ===================================================== */
+
+/* Selects input elements with type="text" */
+input[type="text"] {
+    border: 2px solid #2563eb;
+    padding: 10px;
+}
+
+
+/* Selects input elements with type="email" */
+input[type="email"] {
+    border: 2px solid #16a34a;
+    padding: 10px;
+}
+
+
+/* =====================================================
+   TASK 2 - CSS UNITS
+   ===================================================== */
+
+.unit-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.unit-card {
+    width: 48%;
+    min-width: 280px;
+    padding: 2em;
+    border: 2px solid #2563eb;
+    border-radius: 10px;
+}
+
+
+/* rem */
+.rem-text {
+    font-size: 1.5rem;
+}
+
+
+/* em */
+.em-text {
+    padding: 1.5em;
+    background-color: #e0f2fe;
+}
+
+
+/* percentage */
+.percentage-box {
+    width: 80%;
+    padding: 15px;
+    background-color: #dcfce7;
+    border: 2px solid #16a34a;
+}
+
+
+/* vw */
+.vw-heading {
+    font-size: 3vw;
+}
+
+
+/* px */
+.unit-button {
+    border-width: 5px;
+}
+
+
+/* vh */
+.vh-box {
+    height: 20vh;
+    min-height: 150px;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #fef3c7;
+    border: 2px solid #f59e0b;
+}
+
+
+/* =====================================================
+   TASK 3 - COLORS
+   ===================================================== */
+
+.color-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.color-card {
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* Color name */
+.color-name {
+    background-color: lightblue;
+    color: navy;
+}
+
+
+/* HEX */
+.hex-color {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    border: 3px solid #2563eb;
+}
+
+
+/* RGB */
+.rgb-color {
+    background-color: rgb(220, 252, 231);
+    color: rgb(22, 101, 52);
+}
+
+
+/* RGBA */
+.rgba-color {
+    background-color: rgba(37, 99, 235, 0.20);
+    color: #1e3a8a;
+}
+
+
+/* HSL */
+.hsl-color {
+    background-color: hsl(45, 100%, 90%);
+    color: hsl(25, 80%, 30%);
+}
+
+
+/* HSLA */
+.hsla-color {
+    background-color: hsla(280, 80%, 60%, 0.25);
+    color: hsl(280, 80%, 30%);
+}
+
+
+/* =====================================================
+   TASK 4 - TYPOGRAPHY
+   ===================================================== */
+
+.article-box {
+    padding: 30px;
+    border-left: 5px solid #2563eb;
+}
+
+
+.article-title {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+.article-subtitle {
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+.normal-text {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/* font-style */
+.italic-text {
+    font-style: italic;
+}
+
+
+/* font-variant */
+.small-caps {
+    font-variant: small-caps;
+}
+
+
+/* font-stretch */
+.article-box p {
+    font-stretch: normal;
+}
+
+
+blockquote {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f1f5f9;
+    border-left: 4px solid #64748b;
+    font-style: italic;
+}
+
+
+/* =====================================================
+   TASK 5 - TEXT PROPERTIES
+   ===================================================== */
+
+
+/* color */
+.text-color {
+    color: #dc2626;
+}
+
+
+/* text-align */
+.text-align-example {
+    text-align: center;
+}
+
+
+/* text-align-last */
+.text-align-last-example {
+    text-align: justify;
+    text-align-last: right;
+}
+
+
+/* text-decoration */
+.decoration-example {
+    text-decoration: underline;
+}
+
+
+/* text-decoration-line */
+.underline-example {
+    text-decoration-line: underline;
+}
+
+
+/* text-decoration-style */
+.line-through-example {
+    text-decoration-line: line-through;
+    text-decoration-style: dashed;
+}
+
+
+/* text-decoration-color */
+.underline-example {
+    text-decoration-color: #2563eb;
+}
+
+
+/* text-decoration-thickness */
+.underline-example {
+    text-decoration-thickness: 3px;
+}
+
+
+/* text-transform */
+.transform-example {
+    text-transform: uppercase;
+}
+
+
+/* text-indent */
+.indent-example {
+    text-indent: 40px;
+}
+
+
+/* letter-spacing */
+.spacing-example {
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+
+
+/* line-height */
+.line-height-example {
+    line-height: 2;
+}
+
+
+/* text-shadow */
+.shadow-example {
+    text-shadow: 2px 2px 4px gray;
+}
+
+
+/* white-space */
+.white-space-example {
+    white-space: nowrap;
+    overflow: auto;
+}
+
+
+/* word-break */
+.word-break-example {
+    word-break: break-all;
+}
+
+
+/* overflow-wrap */
+.overflow-example {
+    overflow-wrap: break-word;
+}
+
+
+/* =====================================================
+   TASK 6 - IMAGE PROPERTIES
+   ===================================================== */
+
+.image-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.image-card {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+/* Image 1
+   width
+   height
+   border
+   box-shadow
+*/
+
+.normal-image {
+    width: 100%;
+    height: 220px;
+    max-width: 400px;
+    min-width: 200px;
+    max-height: 250px;
+
+    object-fit: fill;
+
+    border: 4px solid #2563eb;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Image 2
+   circular image
+*/
+
+.circle-image {
+    width: 200px;
+    height: 200px;
+
+    min-width: 150px;
+    max-width: 250px;
+
+    min-height: 150px;
+    max-height: 250px;
+
+    object-fit: cover;
+
+    border: 5px solid #2563eb;
+    border-radius: 50%;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    opacity: 0.9;
+}
+
+
+/* Image 3
+   fixed size
+   object-fit cover
+*/
+
+.cover-image {
+    width: 250px;
+    height: 200px;
+
+    min-width: 200px;
+    max-width: 300px;
+
+    max-height: 250px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border: 4px solid #16a34a;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+    opacity: 0.95;
+}
+
+
+/* =====================================================
+   OBJECT-FIT EXPERIMENT
+   ===================================================== */
+
+.object-fit-demo {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8fafc;
+}
+
+
+.fit-box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.fit-box div {
+    text-align: center;
+}
+
+
+/* object-fit: contain */
+.contain-image {
+    width: 200px;
+    height: 150px;
+
+    object-fit: contain;
+
+    border: 2px solid #2563eb;
+    background-color: #e5e7eb;
+}
+
+
+/* object-fit: cover */
+.cover-image-small {
+    width: 200px;
+    height: 150px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border: 2px solid #16a34a;
+}
+
+
+/* object-fit: fill */
+.fill-image {
+    width: 200px;
+    height: 150px;
+
+    object-fit: fill;
+
+    border: 2px solid #dc2626;
+}
+
+
+/* =====================================================
+   TASK 7 - PROFILE CARD
+   ===================================================== */
+
+.profile-card {
+    width: 400px;
+    max-width: 100%;
+
+    margin: 20px auto;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    border: 3px solid #2563eb;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Image properties */
+.profile-image {
+    width: 160px;
+    height: 160px;
+
+    min-width: 120px;
+    max-width: 200px;
+
+    max-height: 200px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border: 5px solid #2563eb;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 5px 15px rgba(37, 99, 235, 0.3);
+
+    opacity: 0.95;
+}
+
+
+/* Typography */
+.profile-name {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+
+    color: #1d4ed8;
+
+    text-shadow: 1px 1px 2px #ccc;
+}
+
+
+.profession {
+    font-family: Arial, sans-serif;
+
+    font-size: 1.1rem;
+
+    font-style: italic;
+
+    font-weight: 500;
+
+    color: #64748b;
+}
+
+
+.profile-description {
+    text-align: justify;
+
+    text-indent: 20px;
+
+    line-height: 1.7;
+
+    letter-spacing: 0.3px;
+
+    word-spacing: 2px;
+}
+
+
+/* Skills */
+.skills {
+    list-style-position: inside;
+
+    text-align: left;
+
+    margin: 20px 0;
+}
+
+
+.skills li {
+    padding: 5px;
+
+    color: #374151;
+}
+
+
+/* Social links */
+.social-links {
+    margin: 20px 0;
+}
+
+
+.social-links a {
+    display: inline-block;
+
+    margin: 5px;
+
+    padding: 8px 12px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+
+.social-links a:hover {
+    background-color: #1e40af;
+}
+
+
+/* Contact button */
+.contact-button {
+    font-size: 1rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   TASK 8 - TABLE
+   ===================================================== */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+
+th,
+td {
+    border: 1px solid #cbd5e1;
+
+    padding: 12px;
+
+    text-align: left;
+}
+
+
+th {
+    background-color: #1e293b;
+
+    color: white;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+
+/* =====================================================
+   SHORT EXPLANATION
+   ===================================================== */
+
+.explanation-box {
+    padding: 25px;
+
+    background-color: #eff6ff;
+
+    border-left: 5px solid #2563eb;
+
+    border-radius: 8px;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    margin-top: 40px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #1e293b;
+
+    color: white;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    main {
+        width: 95%;
+    }
+
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+
+    .unit-card {
+        width: 100%;
+    }
+
+
+    .color-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .article-title {
+        font-size: 2rem;
+    }
+
+
+    table {
+        font-size: 0.85rem;
+    }
+
+
+    .image-container {
+        flex-direction: column;
+    }
+
+}

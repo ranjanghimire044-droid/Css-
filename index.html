@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- =========================================
+         TASK 1 - CSS SELECTORS
+         ========================================= -->
+
+    <header id="main-header">
+
+        <h1>CSS Fundamentals Practical</h1>
+
+        <p class="subtitle">
+            Learning CSS Selectors, Units, Colors, Typography,
+            Text and Image Properties
+        </p>
+
+        <button class="primary-button">CSS Practical</button>
+
+    </header>
+
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#selectors">Selectors</a>
+        <a href="#units">Units</a>
+        <a href="#colors">Colors</a>
+        <a href="#typography">Typography</a>
+        <a href="#text">Text</a>
+        <a href="#images">Images</a>
+        <a href="#profile">Profile</a>
+    </nav>
+
+
+    <main>
+
+        <!-- =========================================
+             TASK 1 - SELECTORS
+             ========================================= -->
+
+        <section id="selectors">
+
+            <h2>Task 1 - CSS Selectors</h2>
+
+            <p>
+                This section demonstrates different types of CSS selectors.
+            </p>
+
+            <article class="selector-card">
+
+                <h3>1. Universal Selector</h3>
+
+                <p>
+                    The universal selector <strong>*</strong> selects
+                    all elements on the webpage.
+                </p>
+
+            </article>
+
+
+            <article class="selector-card">
+
+                <h3>2. Element Selector</h3>
+
+                <p>
+                    The element selector targets HTML elements such as
+                    paragraphs, headings and buttons.
+                </p>
+
+            </article>
+
+
+            <article class="selector-card special-card">
+
+                <h3>3. Class Selector</h3>
+
+                <p>
+                    This card uses the class selector
+                    <strong>.special-card</strong>.
+                </p>
+
+            </article>
+
+
+            <article id="unique-selector">
+
+                <h3>4. ID Selector</h3>
+
+                <p>
+                    This section uses the ID selector
+                    <strong>#unique-selector</strong>.
+                </p>
+
+            </article>
+
+
+            <article class="group-one">
+
+                <h3>5. Grouping Selector</h3>
+
+                <p>
+                    Headings and paragraphs can be styled together
+                    using a grouping selector.
+                </p>
+
+            </article>
+
+
+            <article class="descendant-example">
+
+                <h3>6. Descendant Selector</h3>
+
+                <div>
+                    <p>
+                        This paragraph is inside a div inside the article.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="child-example">
+
+                <h3>7. Child Selector</h3>
+
+                <p>
+                    This paragraph is a direct child of the article.
+                </p>
+
+                <div>
+                    <p>
+                        This paragraph is inside another div.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="sibling-example">
+
+                <h3>8. Adjacent Sibling Selector</h3>
+
+                <p>
+                    This paragraph comes immediately after the heading.
+                </p>
+
+                <p>
+                    This is another paragraph.
+                </p>
+
+            </article>
+
+
+            <article class="general-sibling">
+
+                <h3>9. General Sibling Selector</h3>
+
+                <p>
+                    This paragraph is a sibling of the heading.
+                </p>
+
+                <p>
+                    This is another sibling paragraph.
+                </p>
+
+            </article>
+
+
+            <article class="attribute-example">
+
+                <h3>10. Attribute Selector</h3>
+
+                <input type="text" placeholder="Text input">
+
+                <input type="email" placeholder="Email input">
+
+            </article>
+
+        </section>
+
+
+        <!-- =========================================
+             TASK 2 - CSS UNITS
+             ========================================= -->
+
+        <section id="units">
+
+            <h2>Task 2 - CSS Units</h2>
+
+            <div class="unit-container">
+
+                <div class="unit-card">
+
+                    <h3>Relative Units</h3>
+
+                    <p class="rem-text">
+                        This text uses rem for font size.
+                    </p>
+
+                    <p class="em-text">
+                        This box uses em for padding.
+                    </p>
+
+                    <div class="percentage-box">
+                        Width: 80%
+                    </div>
+
+                </div>
+
+
+                <div class="unit-card">
+
+                    <h3 class="vw-heading">
+                        Responsive Heading Using VW
+                    </h3>
+
+                    <p>
+                        The heading changes size depending on
+                        the width of the browser.
+                    </p>
+
+                    <button class="unit-button">
+                        20px Border
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="vh-box">
+
+                <h3>Height using VH</h3>
+
+                <p>
+                    This box uses viewport height (vh).
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             TASK 3 - COLORS
+             ========================================= -->
+
+        <section id="colors">
+
+            <h2>Task 3 - CSS Colors</h2>
+
+            <div class="color-container">
+
+                <div class="color-card color-name">
+                    <h3>Color Name</h3>
+                    <p>Blue is used as a color name.</p>
+                </div>
+
+
+                <div class="color-card hex-color">
+                    <h3>HEX</h3>
+                    <p>#2563EB is used here.</p>
+                </div>
+
+
+                <div class="color-card rgb-color">
+                    <h3>RGB</h3>
+                    <p>RGB is used for this card.</p>
+                </div>
+
+
+                <div class="color-card rgba-color">
+                    <h3>RGBA</h3>
+                    <p>RGBA provides transparency.</p>
+                </div>
+
+
+                <div class="color-card hsl-color">
+                    <h3>HSL</h3>
+                    <p>HSL is used for this card.</p>
+                </div>
+
+
+                <div class="color-card hsla-color">
+                    <h3>HSLA</h3>
+                    <p>HSLA provides transparency.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             TASK 4 - TYPOGRAPHY
+             ========================================= -->
+
+        <section id="typography">
+
+            <h2>Task 4 - Typography</h2>
+
+            <article class="article-box">
+
+                <h1 class="article-title">
+                    Understanding CSS Typography
+                </h1>
+
+                <h3 class="article-subtitle">
+                    How typography improves a webpage
+                </h3>
+
+                <p class="normal-text">
+                    Typography is an important part of web design.
+                    CSS allows us to control the appearance of text
+                    using properties such as font family, font size,
+                    font weight and font style.
+                </p>
+
+                <p class="italic-text">
+                    This paragraph demonstrates italic text.
+                </p>
+
+                <p class="small-caps">
+                    This paragraph demonstrates font variant.
+                </p>
+
+                <blockquote>
+                    "Good typography makes information easier to read."
+                </blockquote>
+
+                <ul>
+                    <li>Font Family</li>
+                    <li>Font Size</li>
+                    <li>Font Weight</li>
+                    <li>Font Style</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+
+        <!-- =========================================
+             TASK 5 - TEXT PROPERTIES
+             ========================================= -->
+
+        <section id="text">
+
+            <h2>Task 5 - CSS Text Showcase</h2>
+
+            <div class="text-showcase">
+
+                <div class="text-example">
+
+                    <h3 class="text-color">
+                        Color Property
+                    </h3>
+
+                    <p class="text-align-example">
+                        This text is centered using text-align.
+                    </p>
+
+                    <p class="text-align-last-example">
+                        This paragraph demonstrates text-align-last.
+                        The final line can have a different alignment
+                        from the other lines.
+                    </p>
+
+                </div>
+
+
+                <div class="text-example">
+
+                    <h3 class="decoration-example">
+                        Text Decoration
+                    </h3>
+
+                    <p class="underline-example">
+                        This text is underlined.
+                    </p>
+
+                    <p class="line-through-example">
+                        This text has a line through it.
+                    </p>
+
+                </div>
+
+
+                <div class="text-example">
+
+                    <h3 class="transform-example">
+                        css text transformation example
+                    </h3>
+
+                    <p class="indent-example">
+                        This paragraph demonstrates text indentation.
+                        The first line starts with an indentation.
+                    </p>
+
+                </div>
+
+
+                <div class="text-example">
+
+                    <h3 class="spacing-example">
+                        Letter and Word Spacing
+                    </h3>
+
+                    <p>
+                        Letter spacing and word spacing are demonstrated
+                        in the heading above.
+                    </p>
+
+                </div>
+
+
+                <div class="text-example">
+
+                    <h3>Line Height</h3>
+
+                    <p class="line-height-example">
+                        This paragraph has increased line height.
+                        Increasing line height makes paragraphs easier
+                        to read because there is more space between
+                        each line of text.
+                    </p>
+
+                </div>
+
+
+                <div class="text-example">
+
+                    <h3 class="shadow-example">
+                        Text Shadow
+                    </h3>
+
+                    <p>
+                        The heading above uses text-shadow.
+                    </p>
+
+                </div>
+
+
+                <div class="text-example">
+
+                    <h3>White Space</h3>
+
+                    <p class="white-space-example">
+                        This text demonstrates white-space property.
+                    </p>
+
+                </div>
+
+
+                <div class="text-example">
+
+                    <h3>Word Break</h3>
+
+                    <p class="word-break-example">
+                        ThisIsAVeryLongWordThatDemonstratesWordBreakProperty
+                    </p>
+
+                </div>
+
+
+                <div class="text-example">
+
+                    <h3>Overflow Wrap</h3>
+
+                    <p class="overflow-example">
+                        ThisIsAnotherVeryLongWordThatCanUseOverflowWrap
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             TASK 6 - IMAGE PROPERTIES
+             ========================================= -->
+
+        <section id="images">
+
+            <h2>Task 6 - Image Properties</h2>
+
+            <div class="image-container">
+
+                <!-- Image 1 -->
+                <div class="image-card">
+
+                    <h3>Image 1 - Rectangle</h3>
+
+                    <img
+                        src="rectangle.png"
+                        alt="Normal rectangular image"
+                        class="normal-image"
+                    >
+
+                    <p>
+                        Normal rectangular image with border,
+                        width and height.
+                    </p>
+
+                </div>
+
+
+                <!-- Image 2 -->
+                <div class="image-card">
+
+                    <h3>Image 2 - Circular</h3>
+
+                    <img
+                        src="circle.png"
+                        alt="Circular profile image"
+                        class="circle-image"
+                    >
+
+                    <p>
+                        Circular image using border-radius.
+                    </p>
+
+                </div>
+
+
+                <!-- Image 3 -->
+                <div class="image-card">
+
+                    <h3>Image 3 - Object Fit</h3>
+
+                    <img
+                        src="fixed.png"
+                        alt="Fixed size image"
+                        class="cover-image"
+                    >
+
+                    <p>
+                        Fixed size image using object-fit: cover.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="object-fit-demo">
+
+                <h3>Object-Fit Experiment</h3>
+
+                <div class="fit-box">
+
+                    <div>
+                        <p>Contain</p>
+
+                        <img
+                            src="images/image3.jpg"
+                            alt="Contain example"
+                            class="contain-image"
+                        >
+                    </div>
+
+
+                    <div>
+                        <p>Cover</p>
+
+                        <img
+                            src="images/image3.jpg"
+                            alt="Cover example"
+                            class="cover-image-small"
+                        >
+                    </div>
+
+
+                    <div>
+                        <p>Fill</p>
+
+                        <img
+                            src="images/image3.jpg"
+                            alt="Fill example"
+                            class="fill-image"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             TASK 7 - PERSONAL PROFILE CARD
+             ========================================= -->
+
+        <section id="profile">
+
+            <h2>Task 7 - Personal Profile Card</h2>
+
+            <div class="profile-card">
+
+                <img
+                    src="profile.png"
+                    alt="Profile picture"
+                    class="profile-image"
+                >
+
+                <h2 class="profile-name">
+                    Ranjan Ghimire
+                </h2>
+
+                <h3 class="profession">
+                    Software Engineering Student
+                </h3>
+
+                <p class="profile-description">
+                    I am a software engineering student interested
+                    in web development, programming and learning
+                    new technologies.
+                </p>
+
+
+                <h3>My Skills</h3>
+
+                <ul class="skills">
+
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>Java</li>
+
+                </ul>
+
+
+                <div class="social-links">
+
+                    <a href="https://github.com/ranjanghimire044-droid" target="_blank">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        LinkedIn
+                    </a>
+
+                    <a href="https://www.instagram.com/ranjan_ghimire21/" target="_blank">
+                        Instagram
+                    </a>
+
+                </div>
+
+
+                <button class="contact-button">
+                    Contact Me
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             TASK 8 - OBSERVATION
+             ========================================= -->
+
+        <section id="observation">
+
+            <h2>Task 8 - Experiment and Observation</h2>
+
+            <p>
+                Different values were tested to observe how CSS
+                properties affect the appearance of the webpage.
+            </p>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Property</th>
+                        <th>Value 1</th>
+                        <th>Value 2</th>
+                        <th>Value 3</th>
+                        <th>Observation</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>font-size</td>
+                        <td>16px</td>
+                        <td>24px</td>
+                        <td>32px</td>
+                        <td>Text becomes larger.</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>text-align</td>
+                        <td>left</td>
+                        <td>center</td>
+                        <td>right</td>
+                        <td>Text position changes.</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>opacity</td>
+                        <td>1</td>
+                        <td>0.5</td>
+                        <td>0.2</td>
+                        <td>Element becomes transparent.</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>border-radius</td>
+                        <td>0px</td>
+                        <td>10px</td>
+                        <td>50%</td>
+                        <td>Corners become more rounded.</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>width</td>
+                        <td>30%</td>
+                        <td>60%</td>
+                        <td>90%</td>
+                        <td>Element becomes wider.</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>letter-spacing</td>
+                        <td>0px</td>
+                        <td>2px</td>
+                        <td>5px</td>
+                        <td>Space between letters increases.</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>line-height</td>
+                        <td>1</td>
+                        <td>1.5</td>
+                        <td>2</td>
+                        <td>Space between lines increases.</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- =========================================
+             SHORT EXPLANATION
+             ========================================= -->
+
+        <section id="explanation">
+
+            <h2>Short Explanation</h2>
+
+            <div class="explanation-box">
+
+                <p>
+                    <strong>CSS Selectors:</strong>
+                    Selectors identify HTML elements that need to be styled.
+                </p>
+
+                <p>
+                    <strong>CSS Units:</strong>
+                    Units such as px, %, em, rem, vw and vh control
+                    dimensions and text sizes.
+                </p>
+
+                <p>
+                    <strong>CSS Colors:</strong>
+                    CSS supports different color formats including
+                    names, HEX, RGB, RGBA, HSL and HSLA.
+                </p>
+
+                <p>
+                    <strong>Typography:</strong>
+                    Typography properties control the appearance
+                    and style of text.
+                </p>
+
+                <p>
+                    <strong>Text Properties:</strong>
+                    Text properties control alignment, spacing,
+                    decoration, transformation and readability.
+                </p>
+
+                <p>
+                    <strong>Image Properties:</strong>
+                    Image properties control image size, shape,
+                    transparency, fitting and position.
+                </p>
+
+                <p>
+                    <strong>Profile Card:</strong>
+                    The profile card combines selectors, units,
+                    colors, typography, text and image properties
+                    into one practical design.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            CSS Fundamentals Practical Assignment - FSE
+        </p>
+
+    </footer>
+</body>
+</html>
